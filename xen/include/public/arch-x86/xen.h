@@ -39,8 +39,7 @@
 #endif
 
 #define __DEFINE_XEN_GUEST_HANDLE(name, type) \
-    ___DEFINE_XEN_GUEST_HANDLE(name, type);   \
-    ___DEFINE_XEN_GUEST_HANDLE(const_##name, const type)
+    ___DEFINE_XEN_GUEST_HANDLE(name, type);   
 #define DEFINE_XEN_GUEST_HANDLE(name)   __DEFINE_XEN_GUEST_HANDLE(name, name)
 #define __XEN_GUEST_HANDLE(name)        __guest_handle_ ## name
 #define XEN_GUEST_HANDLE(name)          __XEN_GUEST_HANDLE(name)
