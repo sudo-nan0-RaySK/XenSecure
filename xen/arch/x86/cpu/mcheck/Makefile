@@ -1,0 +1,9 @@
+obj-y += amd_nonfatal.o
+obj-y += k7.o
+obj-y += amd_k8.o
+obj-y += amd_f10.o
+obj-y += mctelem.o
+obj-y += mce.o
+obj-y += mce_intel.o
+obj-y += mce_amd_quirks.o
+obj-y += non-fatal.o
